@@ -4,6 +4,7 @@
   <head>
     <title>Crypto Generator</title>
     <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="script.js"></script>
   </head>
 
   <div class="grid">
@@ -18,6 +19,14 @@
         <br>
         Symbol: {{ symbol }}
       </p>
+
+      <p>The randomly generated string is:</p>
+      <p class="result">Loading...</p>
+
+      <script>
+        const resultElement = document.querySelector('.result');
+        resultElement.textContent = getRandomString();
+      </script>
 
       <button onclick="location.reload()">Refresh</button>
 
