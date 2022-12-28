@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Crypto Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+
+  <div class="grid">
+    <body>
+      <h1>Cryptocurrency Generator</h1>
+      <h2>Find your next investment idea by generating a
+        <br>
+        random cryptocurrency from thousands of tickers!</h2>
+
+      <p>
+        Name: <span class="result1"></span>
+        <br>
+        Symbol: <span class="result2"></span>
+      </p>
+
+      <script>
+        const result1Element = document.querySelector('.result1');
+        const result2Element = document.querySelector('.result2');
+        result1Element.textContent = randomValues[0];
+        result2Element.textContent = randomValues[1];
+      </script>
+
+      <button onclick="location.reload()">Refresh</button>
+
+    </body>
+
+  </div>
+
+</html>
+

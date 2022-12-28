@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color:#1b2735;
+	color: white;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(13, 1fr);
+	grid-template-rows: 70px 80px 30px 30px 50px 40px 50px 25px 50px 100px;
+	grid-gap: 0px;
+}
+
+h1{
+	font-family: "Consolas";
+	font-size: 45px;
+	color:#fffafa;
+	text-align: center;
+	grid-column: 1 / -1;
+	grid-row: 2;
+	text-decoration: underline;
+}
+
+h2{
+	font-family: "Consolas";
+	font-size: 18px;
+	color:#fffafa;
+	text-align: center;
+	grid-column: 1 / -1;
+	grid-row: 4;
+}
+
+p {
+	font-family: "Consolas";
+	font-size: 20px;
+	text-align: center;
+	color:#fffafa;
+	grid-column: 1 / -1;
+	grid-row: 9;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+button {
+	background-color: whitesmoke;
+	color: #1b2735;
+	text-align: center;
+	font-family: "Consolas";
+	font-size: 30px;
+	cursor: pointer;
+	grid-column: 1 / -1;
+	grid-row: 7;
+	border: white;
+	width: 150px;
+	line-height: 45px;
+	margin: auto;
+	border-radius: 13px;
+  }
+  
